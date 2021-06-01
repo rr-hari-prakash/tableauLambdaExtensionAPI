@@ -1,4 +1,4 @@
-## Setup and Running Samples
+## Setup for running Lambda Extension API
 
 ### Prerequisites
 * You must have Node.js and npm installed. You can get these from [http://nodejs.org](http://nodejs.org).
