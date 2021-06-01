@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lambda Extensions Dialog</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+    <!-- Extensions Library (this will be hosted on a CDN eventually) -->
+    <script src="../lib/tableau.extensions.1.latest.js"></script>
+
+    <!-- Our extension's code -->
+    <script src="./lambda-extension-dialog.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h4>AWS Lambda Configuration</h4>
+      <p>
+        This Extension receives Lambda Configuration settings to invoke the function.
+      </p>
+      <hr />
+
+      <!-- <h5>Apply to these datasources: </h5>
+      <div style="margin-left: 14px" id="datasources">
+      </div>
+      <h5>Refresh interval in minutes:</h5>
+      <input style="margin-left: 14px" type="number" id="interval" name="quantity" min="1" max="60"> -->
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Region</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="region" placeholder="Region">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">AWS Cognito Identity Pool ID</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="cognitoPoolId" placeholder="Pool ID">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Lambda Function Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="lambdaFunction" placeholder="Lambda Function Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Invocation Type</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="invocationType" placeholder="Invocation type">
+          </div>
+        </div>
+        <!-- <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Parameters</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="parameters" placeholder="List the parameters">
+          </div>
+        </div> -->
+
+        <!-- <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div> -->
+      </form>
+
+      <hr />
+      <button id="closeButton">Save</button>
+    </div>
+  </body>
+</html>
