@@ -20,4 +20,4 @@
    **npm start**
    
    
-   For more details, check out my [Medium artile](https://medium.com/@prakashstj2395/invoke-aws-lambda-with-tableau-extensions-api-2fd6ef10c145)
+For more details, check out my [Medium artile](https://medium.com/@prakashstj2395/invoke-aws-lambda-with-tableau-extensions-api-2fd6ef10c145)
